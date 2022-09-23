@@ -4,7 +4,7 @@
  * @Autor: z.cejay@gmail.com
  * @Date: 2022-08-08 21:53:06
  * @LastEditors: cejay
- * @LastEditTime: 2022-09-23 08:38:36
+ * @LastEditTime: 2022-09-23 12:32:27
  */
 
 import { MysqlHelper } from './utils/mysqlHelper';
@@ -81,7 +81,7 @@ interface openSeaEvent {
 async function fetchUntilId(contractAddress: string, openSeaId: number) {
     const events: openSeaEvent[] = [];
     let cursor = '';
-    for (let index = 0; index < 2; index++) {
+    for (let index = 0; index < 20; index++) {
         const openSeaEvent = await fetch(contractAddress, cursor);
         if (openSeaEvent && openSeaEvent.asset_events) {
             console.log(`opensea event: contract ${contractAddress}\tevent len ${openSeaEvent.asset_events.length}`);
