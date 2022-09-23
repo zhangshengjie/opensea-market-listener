@@ -4,7 +4,7 @@
  * @Autor: z.cejay@gmail.com
  * @Date: 2022-08-08 21:53:06
  * @LastEditors: cejay
- * @LastEditTime: 2022-09-23 12:32:27
+ * @LastEditTime: 2022-09-23 15:13:49
  */
 
 import { MysqlHelper } from './utils/mysqlHelper';
@@ -218,7 +218,7 @@ async function fetchPriceForever() {
                         seven_day_difference, thirty_day_volume, thirty_day_change, thirty_day_sales, thirty_day_average_price, 
                         thirty_day_difference, total_volume, total_sales, total_supply, count, num_owners, average_price, 
                         num_reports, market_cap, floor_price) VALUES (
-                            ${collection.address}, 
+                            '${collection.address}', 
                             ${stats.one_hour_volume}, 
                             ${stats.one_hour_change}, 
                             ${stats.one_hour_sales}, 
