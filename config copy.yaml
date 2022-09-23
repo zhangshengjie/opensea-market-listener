@@ -1,0 +1,20 @@
+mysql:
+  host: "xxx"
+  port: 3306
+  user: "xxx"
+  password: "xxx"
+  database: "xxx"
+  charset: "utf8mb4"
+  table_event: "tmp_opensea_data_event"
+  table_price: "tmp_opensea_data_price"
+
+openseaApiKey:
+  ["xxx", "xxx"]
+
+
+collections:
+  - address: "0xed5af388653567af2f388e6224dc7c4b3241c544"
+    collection_slug: "azuki"
+  - address: "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    collection_slug: "boredapeyachtclub"
+
